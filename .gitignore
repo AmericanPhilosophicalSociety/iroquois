@@ -1,0 +1,3 @@
+#Ignore data and indexes
+data/dc/*
+index/*

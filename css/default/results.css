@@ -1,0 +1,407 @@
+/* crossQuery RESULTS stylesheet */
+
+body {
+  color: #333;
+  font: 80% Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+ background-image: url(images/gradient.jpg);
+	background-repeat: repeat-x;
+	background-color: #999966;
+}
+
+a:link, a:visited {
+  color: #069;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:focus {
+  outline: 1px dotted;
+}
+
+a:hover, a:active, li a.active {
+  color: #9f2d20;
+  outline: none;
+  text-decoration: none;
+}
+
+form {
+	display: inline;
+}
+
+.clear {
+	clear: both;
+}
+
+div.header {
+	 width: 90%;
+	 max-width: 960px;
+	 border-bottom: 0;
+	 margin: 0 auto;
+	 background-color: #999966;
+}
+
+div.header img {
+	border: 0;
+}
+
+div.header img.xtf-logo {
+	float: left;
+	
+}
+
+div.header img.your-logo {
+	float: right;
+	margin: 10px 15px;
+}
+
+
+div.footer {
+   margin: 0 auto;
+	 width: 90%;
+	 max-width: 960px;
+	 text-align: center;
+	 padding: 10px 0;
+	 margin-bottom: 20px;
+	 border-top: 1px solid #999;
+	 background-color: #d2d4d5;
+}
+
+div.footer a {
+	color:#069; 
+	text-decoration:none; 
+	font-size:12pt; 
+	font-weight:bold;
+}
+/* Forms */
+
+div.searchPage {
+	margin: 0 auto;
+	 background-color: #FFFFFF;
+	 width: 90%;
+	 max-width: 960px;
+
+	 border-top: 1px solid #999;
+}
+
+div.forms {
+	min-height: 300px;
+}
+
+div.forms table {
+   width: 100%;
+   border-spacing: 0;
+}
+
+div.forms table,
+div.forms table td {
+	border-spacing: 0;
+}
+
+div.forms table td.tab,
+div.forms table td.tab-select {
+	width: 25%;
+	text-align: center;
+	padding: 0.5em;
+}
+
+div.forms table td.tab {
+   border: 1px solid #999;
+	 background-color: #E8EBF1;
+}
+
+div.forms table td.tab-select {
+   
+	 border-bottom: 0;
+}
+
+div.forms table td.tab a {
+	text-decoration: none;
+	color: #333;
+}
+
+div.forms table td.tab a:hover {
+	text-decoration: underline;
+}
+
+div.forms table td.tab-select a {
+	color: #424F8D;
+}
+
+div.form {
+   width: 99%;
+	 margin: 20px 0 10px 10px;
+	 text-align: center;
+}
+
+div.form table {
+	margin: 0 auto;
+}
+
+div.form table.top_table {
+	width: 100%;
+	margin: 0 auto;
+}
+
+div.form table.left_table {
+	border-right: 1px solid #ccc;
+	text-align: left;
+	margin-right: 40px;
+	width: 90%;
+}
+
+div.form table.right_table {
+	margin: 0 25px;
+}
+
+div.form table h4 {
+	margin: 0 0 10px 0;
+}
+
+div.form table,
+div.form table td {
+	/*border: 1px solid #ccc;*/
+}
+
+div.form table td {
+	vertical-align: top;
+	text-align: left;
+}
+
+div.form table td.half {
+	vertical-align: top;
+	width: 45%;
+}
+
+div.form table td.spacer {
+	vertical-align: top;
+	width: 10%;
+}
+
+div.form table td.right {
+	
+	text-align: right;
+}
+
+div.form table td table td {
+	vertical-align: middle;
+}
+
+div.form table td.indent {
+   width: 2px;
+}
+
+table.sampleTable {
+	margin-top: 20px;
+}
+
+table.sampleTable td {
+	padding: 5px;
+}
+
+table td.sampleQuery {
+   font-family: courier, serif;
+   border-style: solid;
+   border-color: black;
+   border-width: 1px 1px 1px 1px;
+}
+
+table td.sampleDescrip {
+    font-style: italic;
+}
+
+/* Results */
+
+div.resultsHeader {
+   width: 90%;
+   max-width: 960px;
+
+	 border-top: 1px solid #999;
+	 border-bottom: 1px solid #999;
+	 background-color: #d2d4d5;
+	 margin-left: auto;
+	 margin-right: auto;
+}
+
+div.resultsHeader table {
+   width: 100%;
+}
+
+div.resultsHeader table td {
+	padding: 2px 5px;
+}
+
+td.right {
+   text-align: right;
+}
+
+td.left {
+   text-align: left;
+}
+
+td.center {
+   text-align: center;
+	 padding: 10px;
+}
+
+div.query {
+
+}
+
+div.label {
+   float: left;
+}
+
+div.resultsHeader .subQuery {
+
+}
+
+div.results {
+   margin: 0 auto;
+   background-color: #FFFFFF;
+	 width: 90%;
+	 max-width: 960px;
+	 min-height: 300px;
+}
+
+div.results table {
+	margin: 0 10px;
+}
+
+div.results table td {
+   vertical-align: top;
+}
+
+div.results table td.facet{
+   width: 25%;
+}
+
+div.facetGroup {
+	font-size: 95%;	
+}
+
+div.results table td.docHit{
+}
+
+div.docHit {
+	background-color: #FAFAFB;
+	border: 1px solid #ccc;
+	margin: 10px 0 10px 0;
+	padding: 10px;
+}
+
+div.docHit table td {
+	/* border: 1px solid red; */
+}
+
+div#main_2, div#main_4, div#main_6, div#main_8, div#main_10, div#main_12 {
+	
+}
+
+div.docHit table td.col1{
+   width: 4%;
+   text-align: left;
+   vertical-align:top;
+}
+
+div.docHit table td.col2{
+   width: 10%;
+   text-align: right;
+}
+
+div.docHit table td.col3{
+   width: auto;
+   text-align: left;
+}
+
+div.docHit table td.col4{
+   width: 10%;
+   text-align: right;
+}
+
+div.docHit table td.col5{
+   width: 10%;
+   text-align: left;
+}
+
+div.docHit .typeIcon {
+	vertical-align: text-top;
+	margin-left: 1px;
+}
+
+.hit {
+   color: #FD8239;
+   font-weight: bold;
+}
+
+.bold {
+   font-weight: bold;
+}
+
+.subhit {
+   color: #cc0066;
+   font-weight: bold;
+	 margin-left: 5px;
+}
+
+.hitsection {
+   background-color: #D6DCE5;
+}
+
+
+div.facetName {
+  font-weight: bold;
+	margin: 10px 0;
+	font-size: 95%;
+}
+
+div.facet table {
+   border-style: none;
+}
+
+div.facet table td.col1 {
+   width: 12px;
+   text-align: center;
+   vertical-align: top;
+   padding-right: 0.5em;
+	 color: #6699CC;
+}
+
+div.facet table td.col2 {
+   padding-bottom: 0.1em;
+   padding-top: 0.1em;
+}
+
+div.facet table td.col3 {
+   text-align: right;
+   vertical-align: bottom;
+}
+
+div.facetMore {
+   margin-top: 0.5em;
+   margin-left: 2em;
+}
+
+div.facetLess {
+   margin-left: 2em;
+   margin-bottom: 0.5em;
+}
+
+div.getAddress {
+	width: 95%;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #666;
+	border-top: 0;
+	padding: 10px;
+}
+
+div.getAddress h2 {
+	margin: 0 0 10px 0;
+	font-size: 120%;
+}
+
+div.copyright {
+	font-weight: bold;
+}
