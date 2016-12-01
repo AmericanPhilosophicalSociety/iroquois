@@ -558,6 +558,15 @@
       </xsl:if>
    </xsl:template>
    
+      <xsl:template match="place">
+      <a href="{$xtfURL}{$crossqueryPath}?place={.};place-join=exact;smode={$smode};rmode={$rmode};style={$style};brand={$brand}">
+         <xsl:apply-templates/>
+      </a>
+      <xsl:if test="not(position() = last())">
+         <xsl:text> | </xsl:text>
+      </xsl:if>
+   </xsl:template>
+   
    <xsl:template match="clan">
       <a href="{$xtfURL}{$crossqueryPath}?clan={.};clan-join=exact;smode={$smode};rmode={$rmode};style={$style};brand={$brand}">
          <xsl:apply-templates/>

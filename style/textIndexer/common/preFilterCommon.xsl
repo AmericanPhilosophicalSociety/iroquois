@@ -5,6 +5,7 @@
    xmlns:xtf="http://cdlib.org/xtf"
    xmlns:saxon="http://saxon.sf.net/"
    xmlns:FileUtils="java:org.cdlib.xtf.xslt.FileUtils"
+   xmlns:CharUtils="java:org.cdlib.xtf.xslt.CharUtils"
    extension-element-prefixes="saxon FileUtils"
    exclude-result-prefixes="#all">
    

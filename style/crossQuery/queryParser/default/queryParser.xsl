@@ -150,14 +150,14 @@
          <xsl:if test="//param[matches(@name,'browse-title')]">
             <xsl:variable name="page" select="//param[matches(@name,'browse-title')]/@value"/> 
             <xsl:variable name="pageSel" select="if ($page = 'first') then '*[1]' else $page"/>
-            <facet field="browse-title" sortGroupsBy="value" select="{concat('*|',$pageSel,'#all')}"/>
+            <facet field="browse-title" sortGroupsBy="value" select="{concat('*|',$pageSel,'#all')}" sortDocsBy="sort-title"/>
          </xsl:if>
          
          <!-- to support clan browse pages -->
          <xsl:if test="//param[matches(@name,'browse-clan')]">
             <xsl:variable name="page" select="//param[matches(@name,'browse-clan')]/@value"/> 
             <xsl:variable name="pageSel" select="if ($page = 'first') then '*[1]' else $page"/>
-            <facet field="browse-clan" sortGroupsBy="value" select="{concat('*|',$pageSel,'#all')}"/>
+            <facet field="browse-clan" sortGroupsBy="value" select="{concat('*|',$pageSel,'#all')}" sortDocsBy="sort-clan,sort-tribe,sort-title"/>
          </xsl:if>
          
          <!-- process query -->

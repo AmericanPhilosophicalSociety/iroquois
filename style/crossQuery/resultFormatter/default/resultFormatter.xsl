@@ -716,12 +716,12 @@ Item number <xsl:value-of select="$num"/>:
               <b>Place:&#160;&#160;</b>
             </td>
             <td class="col3">
-              <xsl:choose>
-                <xsl:when test="meta/place">
-                  <xsl:apply-templates select="meta/place"/>
-                </xsl:when>
 
-              </xsl:choose>
+                <xsl:if test="meta/place">
+                  <xsl:apply-templates select="meta/place"/>
+                </xsl:if>
+
+
             </td>
             <td class="col4">
               <xsl:text>&#160;</xsl:text>
